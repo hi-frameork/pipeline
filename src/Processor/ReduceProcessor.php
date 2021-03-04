@@ -67,7 +67,7 @@ class ReduceProcessor implements ProcessorInterface
         return function ($stack, $stage) {
             return function ($payload) use ($stack, $stage) {
                 // 每个管道节点执行前触发处理器回调事件
-                // 我们可以在该回调中进行日志金路、耗时统计等
+                // 我们可以在该回调中进行日志链路路、耗时统计等
                 if (! is_null($this->beforeCallback)) {
                     call_user_func($this->beforeCallback, $stage, $payload);
                 }
