@@ -1,0 +1,27 @@
+<phpunit bootstrap="tests/autoload.php"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd">
+
+    <testsuites>
+        <testsuite name="container tests">
+            <directory>./tests/Container</directory>
+        </testsuite>
+        <!-- <testsuite name="event tests"> -->
+            <!-- <directory>./tests/Event</directory> -->
+        <!-- </testsuite> -->
+        <!-- <testsuite name="route tests"> -->
+            <!-- <directory>./tests/Route</directory> -->
+        <!-- </testsuite> -->
+        <!-- <testsuite name="pipeline tests"> -->
+            <!-- <directory>./tests/Pipeline</directory> -->
+        <!-- </testsuite> -->
+    </testsuites>
+
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src</directory>
+        </whitelist>
+    </filter>
+
+</phpunit>
+

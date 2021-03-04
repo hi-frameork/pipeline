@@ -1,0 +1,24 @@
+{
+    "name": "hi/pipeline",
+    "description": "Hi 框架管道组件",
+    "type": "library",
+    "authors": [
+        {
+            "name": "热心网友",
+            "email": "anoxia@engineer.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Hi\\Pipeline\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hi\\Pipeline\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.2"
+    }
+}
