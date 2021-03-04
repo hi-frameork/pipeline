@@ -5,14 +5,14 @@ namespace Hi\Pipeline;
 use Hi\Pipeline\Processor\ReduceProcessor;
 use Hi\Pipeline\Processor\SequenceProcessor;
 
-class Builder
+class PipelineFactory
 {
     /**
      * 返回 reduce 流水线示例
      *
      * @return Pipeline
      */
-    public static function newReducePipeline()
+    public static function createReducePipeline()
     {
         $processor = new ReduceProcessor;
         $pipeline  = new Pipeline($processor);
@@ -25,7 +25,7 @@ class Builder
      *
      * @return Pipeline
      */
-    public static function newSequencePipeline()
+    public static function createSequencePipeline()
     {
         $processor = new SequenceProcessor;
         $pipeline  = new Pipeline($processor);
